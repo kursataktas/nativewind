@@ -1,6 +1,7 @@
 import { AnimationAttributes } from "../animations";
 import type { ResolveOptions } from "../resolvers";
 import { ConfigReducerState } from "../state/config";
+import { TransitionAttributes } from "../transitions";
 import type {
   AttributeCondition,
   ContainerQuery,
@@ -47,7 +48,7 @@ export interface StyleRule {
   // Animations
   a?: AnimationAttributes;
   // Transitions
-  // t?: TransitionDescriptor;
+  t?: TransitionAttributes;
 }
 
 export type StyleAttribute = string;
